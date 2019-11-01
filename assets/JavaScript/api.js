@@ -15,7 +15,7 @@ $(document).ready(function(){
           //var apicall = 'api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml';
           
           $.ajax({
-            url: `http://api.openweathermap.org/data/2.5/forecast?appid=${key}&q=${city}&count=10&units=metric`, //API Call
+            url: `https://api.openweathermap.org/data/2.5/forecast?appid=${key}&q=${city}&count=10&units=metric`, //API Call
             dataType: "json",
             type: "GET",
             
@@ -32,7 +32,7 @@ $(document).ready(function(){
                // wf += "</p>" // Closing paragraph tag
                
 
-                var icon="http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"
+                var icon="https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"
                 console.log(icon);
                 var temp =Math.floor(data.list[0].main.temp)+ '&deg;C ';
                 var weath = data.list[0].weather[0].description
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 $(".weather").append(weath);
                 console.log(temp);
 
-                var icon2="http://openweathermap.org/img/w/" + data.list[8].weather[0].icon + ".png"
+                var icon2="https://openweathermap.org/img/w/" + data.list[8].weather[0].icon + ".png"
                 console.log(icon2);
                 var temp2 =Math.floor(data.list[8].main.temp)+ '&deg;C ';
                 var weath2  = data.list[8].weather[0].description
@@ -51,7 +51,7 @@ $(document).ready(function(){
                 console.log(temp2);
 
 
-                var icon3="http://openweathermap.org/img/w/" + data.list[16].weather[0].icon + ".png"
+                var icon3="https://openweathermap.org/img/w/" + data.list[16].weather[0].icon + ".png"
                 console.log(icon3);
                 var temp3 =Math.floor(data.list[16].main.temp)+ '&deg;C ';
                 var weath3 = data.list[16].weather[0].description
@@ -61,7 +61,7 @@ $(document).ready(function(){
                 console.log(temp3);
 
 
-                var icon4="http://openweathermap.org/img/w/" + data.list[24].weather[0].icon + ".png"
+                var icon4="https://openweathermap.org/img/w/" + data.list[24].weather[0].icon + ".png"
                 console.log(icon4);
                 var temp4 =Math.floor(data.list[24].main.temp)+ '&deg;C ';
                 var weath4  = data.list[24].weather[0].description
@@ -70,7 +70,7 @@ $(document).ready(function(){
                 $(".weather4").append(weath4);
                 console.log(temp4);
 
-                var icon5="http://openweathermap.org/img/w/" + data.list[32].weather[0].icon + ".png"
+                var icon5="https://openweathermap.org/img/w/" + data.list[32].weather[0].icon + ".png"
                 console.log(icon5);
                 var temp5 =Math.floor(data.list[32].main.temp)+ '&deg;C ';
                 var weath5  = data.list[32].weather[0].description
