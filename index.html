@@ -2,27 +2,55 @@
 <html>
 <head>
   <title>Weather Api</title>
+  <h1>WeatherDashBoard</h1>
   
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
   crossorigin="anonymous" ></script>
   <script src="assets/JavaScript/api.js"></script>
+  <script src="assets/JavaScript/newapi.js"></script>
+  <link rel="stylesheet" href="assets/css/cssSheet.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-  <input id="city"></input>
-  <button id="getWeatherForcast">GET WEATHER</button>
+ 
   <div class="ShowWeatherForcast"></div>
-  <div class="5dayForcast">hi</div>
-
+  <div id="5dayForcast"></div>
+  
   <script type="text/javascript"></script>
 
+  <div class="container">
+      <input id="city"></input>
+      <button id="getWeatherForcast"class="btn btn-info">GET WEATHER</button>
+              <div class= "weather-container">
+                <img class= "icon">
+                <p class="weather"></p>
+                <p class= "temp"></p>
+              </div>
 
-  <div class="component__weather-box">
-    <div class="component__weather-content">
-      <div class="weather-content__overview"></div>
-      <div class="weather-content__temp"></div>
-    </div>
-    <div class="component__forecast-box"></div>
-  </div>
+              <div class= "weather-container2">
+                <img class= "icon2">
+                <p class="weather2"></p>
+                <p class= "temp2"></p>
+              </div>
+
+              <div class= "weather-container3">
+                <img class= "icon3">
+                <p class="weather3"></p>
+                <p class= "temp3"></p>
+              </div>
+
+              <div class= "weather-container4">
+                <img class= "icon4">
+                <p class="weather4"></p>
+                <p class= "temp4"></p>
+              </div>
+
+              <div class= "weather-container5">
+                <img class= "icon5">
+                <p class="weather5"></p>
+                <p class= "temp5"></p>
+              </div>
+            </div>
 </body>
 </html>

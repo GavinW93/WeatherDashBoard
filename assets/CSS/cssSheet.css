@@ -1,3 +1,31 @@
-div ShowWeatherForcast {
-    border: 1px solid red;
+.container {
+  margin: auto;
+  width: 50%;
+  border: 5px solid bisque;
+  padding: 50px;
+  }
+  .weather-container {
+    background-color: rgb(41, 187, 119);
+box-sizing: border-box;
+  }
+  .weather-container2 {
+    background-color: rgb(41, 187, 119);
+box-sizing: border-box;
+  }
+  .weather-container3 {
+    background-color: rgb(41, 187, 119);
+box-sizing: border-box;
+  }
+  .weather-container4 {
+    background-color: rgb(41, 187, 119);
+box-sizing: border-box;
+  }
+  .weather-container5 {
+    background-color: rgb(41, 187, 119);
+box-sizing: border-box;
+  }
+  h1{
+    text-align: center;
+    color: rgb(11, 70, 38);
+    background-color: aquamarine;
   }
